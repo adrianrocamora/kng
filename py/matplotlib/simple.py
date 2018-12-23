@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib
 # matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set(style="darkgrid")
 
 t = np.arange(0.0, 2.0, 0.01)
 s = np.sin(2*np.pi*t)
