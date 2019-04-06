@@ -27,10 +27,8 @@ for i in range(1, t + 1):
         return x 
 
     primes = []
-
     for j in range(l - 1):
         primes.append(gcd(crymsg[j], crymsg[j+1]))
-
     primes.insert(0, crymsg[0] // primes[0])
     primes.append(crymsg[l-1]//primes[l-1])
     primes.sort()
@@ -39,6 +37,8 @@ for i in range(1, t + 1):
     #print(primes_set)
     #print(len(primes_set))
     prim = list(primes_set)
+    prim.sort()
+
     #print(prim)
     #print(len(prim))
 

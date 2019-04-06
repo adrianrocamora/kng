@@ -16,6 +16,9 @@ for i in range(1, t + 1):
     a = math.floor(n/2)
     b = n - a
 
+    ## Careful, we might land in a "bad area"
+    # Like 4444444
+
     def is_pair_good(a, b):
         for c in str(a):
             if c == '4':
@@ -24,10 +27,14 @@ for i in range(1, t + 1):
             if c == '4':
                 return False
         return True
-    
-    while not is_pair_good(a, b):
+
+    def get_next_candidates(a, b):
         a -= 1
         b += 1
+        return a, b
+    
+    while not is_pair_good(a, b):
+        a, b = get_next_candidates(a, b)
     
     print("Case #{}: {} {}".format(i, a, b)) 
 
