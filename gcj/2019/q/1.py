@@ -12,29 +12,32 @@ import math
 for i in range(1, t + 1):
     n = int(input())
 
-    # here they are each as big as possible
-    a = math.floor(n/2)
-    b = n - a
+    lut = {
+            '0': ('0', '0'),
+            '1': ('0', '1'),
+            '2': ('1', '1'),
+            '3': ('1', '2'),
+            '4': ('2', '2'),
+            '5': ('2', '3'),
+            '6': ('3', '3'),
+            '7': ('2', '5'),
+            '8': ('2', '6'),
+            '9': ('3', '6')
+            }
 
-    ## Careful, we might land in a "bad area"
-    # Like 4444444
+    nstr = str(n)
 
-    def is_pair_good(a, b):
-        for c in str(a):
-            if c == '4':
-                return False
-        for c in str(b):
-            if c == '4':
-                return False
-        return True
+    ali = []  
+    bli = []
+    for c in nstr:
+        ali.append(lut[c][0])
+        bli.append(lut[c][1])
 
-    def get_next_candidates(a, b):
-        a -= 1
-        b += 1
-        return a, b
-    
-    while not is_pair_good(a, b):
-        a, b = get_next_candidates(a, b)
+    astr = ''.join(ali)
+    bstr = ''.join(bli)
+
+    a = int(astr)
+    b = int(bstr)
     
     print("Case #{}: {} {}".format(i, a, b)) 
 
