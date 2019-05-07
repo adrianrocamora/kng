@@ -13,6 +13,11 @@ page_soup = soup(page_html, "html.parser")
 
 containers = page_soup.findAll("div", {"class": "item-info"})
 
+filename = 'data.csv'
+f = open(filename, 'w')
+headers = 'brand, product_name, shipping'
+f.write(headers)
+
 for container in containers:
 	brand = container.div.a.img["title"]
 	product_name = container.findAll("a", {"class":"item-title"})[0].text
@@ -22,3 +27,6 @@ for container in containers:
 	print(product_name)
 	print(shipping)
 	print('')
+
+	f.write(brand + ',' + product_name.replace(',', '|') + ',' + shipping + '\n')
+f.close()
