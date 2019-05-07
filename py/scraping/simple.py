@@ -12,4 +12,7 @@ uClient.close()
 page_soup = soup(page_html, "html.parser")
 containers = page_soup.findAll("div", {"class": "item-info"})
 print(len(containers))
-print(containers[0])
+print(containers[0].div.a.img["title"])
+print(containers[0].findAll("a", {"class":"item-title"})[0].text)
+print(containers[0].findAll("li", {"class":"price-ship"})[0].text.strip())
+
