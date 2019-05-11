@@ -1,0 +1,1 @@
+gnuplot -c simple.dem
