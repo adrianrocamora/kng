@@ -30,17 +30,17 @@ class Circle extends Shape {
 	}
 }
 
-myShape = new Shape();
+let myShape = new Shape();
 console.log(myShape);
 console.log(myShape.otherThing);
 console.log(myShape.expand());
 console.log();
 
-myCircle = new Circle(10);
+let myCircle = new Circle(10);
 console.log(myCircle);
 console.log(myCircle.otherThing);
 console.log(myCircle.expand());
 console.log();
 
-newCircle = Circle.createFromDiameter(10);
+let newCircle = Circle.createFromDiameter(10);
 console.log(newCircle);
