@@ -1,4 +1,3 @@
-//class Circle extends Shape {
 class Shape {
 
 	constructor () {
