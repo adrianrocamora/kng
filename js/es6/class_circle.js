@@ -34,9 +34,13 @@ myShape = new Shape();
 console.log(myShape);
 console.log(myShape.otherThing);
 console.log(myShape.expand());
+console.log();
 
 myCircle = new Circle(10);
 console.log(myCircle);
 console.log(myCircle.otherThing);
 console.log(myCircle.expand());
+console.log();
 
+newCircle = Circle.createFromDiameter(10);
+console.log(newCircle);
