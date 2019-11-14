@@ -7,6 +7,5 @@ y = x **3
 fig = plt.figure()
 plt.plot(x,y)
 fig.savefig('cubic.png')
-fig.savefig('cubic.jpg') 
-
+fig.savefig('cubic.pdf') 
 
