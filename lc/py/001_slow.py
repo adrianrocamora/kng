@@ -13,17 +13,17 @@ def solution_slow(arr, tar):
 print()
 
 print("Result is:")
-t1a = [2, 7, 11, 15]
-t1t = 22
-idxs = solution_slow(t1a, t1t)
-print(tla)
-print(tlt)
+arr = [2, 7, 11, 15]
+tar = 22
+idxs = solution_slow(arr, tar)
+print(arr)
+print(tar)
 print(idxs)
 print()
 
-t1a = [3, 2, 4]
-t1t = 6
-idxs = solution_slow(t1a, t1t)
-print(tla)
-print(tlt)
+arr = [3, 2, 4]
+tar = 6
+idxs = solution_slow(arr, tar)
+print(arr)
+print(tar)
 print(idxs)
