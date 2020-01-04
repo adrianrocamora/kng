@@ -10,3 +10,10 @@ class Solution(object):
 
     return []
 
+sol = Solution()
+nums = [2, 3, 6, 9]
+target = 9
+print(nums)
+print(target)
+print(sol.two_sum(nums, target))
+
