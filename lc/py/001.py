@@ -4,7 +4,7 @@ class Solution(object):
 
     for i, num in enumerate(nums):
       if target - num in num_to_idx:
-        return [i, num_to_idx[target - num]].sorted()
+        return [i, num_to_idx[target - num]]
       
       num_to_idx[num] = i
 
