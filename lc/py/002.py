@@ -47,6 +47,8 @@ print(a)
 b = Node(1)
 print(b)
 
+sol = Solution()
+print(sol.add_two_numbers(a, b))
 
 
 
