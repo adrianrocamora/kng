@@ -43,6 +43,8 @@ a.next.next = Node(8)
 print(a)
 
 b = Node(1)
+b.next = Node(6)
+b.next.next= Node(2)
 print(b)
 
 sol = Solution()
