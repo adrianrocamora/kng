@@ -37,9 +37,13 @@ class Solution(object):
 sol = Solution()
 nums = [6, 9, 2, 3]
 target = 11 
-# nums = [2, 3, 6, 9]
-# target = 9
 print(nums)
 print(target)
 print(sol.two_sum(nums, target))
+print()
 
+nums = [2, 3, 6, 9]
+target = 8
+print(nums)
+print(target)
+print(sol.two_sum(nums, target))
