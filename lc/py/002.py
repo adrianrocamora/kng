@@ -37,11 +37,9 @@ class Solution(object):
 
     return res.next
 
-a = Node(2)
-a2 = Node(4)
-a3 = Node(8)
-a2.next = a3
-a.next = a2
+a = Node(9)
+a.next = Node(4)
+a.next.next = Node(8)
 print(a)
 
 b = Node(1)
