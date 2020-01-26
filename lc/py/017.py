@@ -29,9 +29,10 @@ class Solution(object):
           temp.append(result + [letter])
       results = temp
 
+    print(results)
     # convert lists of chars to strings
     return ["".join(result) for result in results]
 
-d = '529'
+d = '52'
 print(d)
 print(Solution().letter_combinations(d))
