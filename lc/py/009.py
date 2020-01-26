@@ -1,3 +1,12 @@
+# 009 - Palindrome Number
+
+# Determine whether an integer is a palindrome. 
+# Do this without extra space
+
+# Check equivalence of first and last characters, moving inwards
+# Time - O(n)
+# Space - O(1)
+
 class Solution(object):
   def isPalindrome(self, x):
     s = str(x)
@@ -11,7 +20,11 @@ class Solution(object):
 
     return True
 
-sol = Solution()
 x = 34843
 print(x)
-print(sol.isPalindrome(x))
+print(Solution().isPalindrome(x))
+print()
+
+x = 1234
+print(x)
+print(Solution().isPalindrome(x))
