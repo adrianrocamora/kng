@@ -1,3 +1,12 @@
+# 013 - Roman to Integer
+
+# Given a roman numeral, convert it to an integer
+# Input is guaranteed to be within the range from 1 to 3999
+
+# Check for 2-character matches and if none there must be a single char match
+# Time - O(n) where len(s) = n
+# Space - O(1)
+
 class Solution(object):
   def romanToInt(self, s):
     doubles = {'CM':900, 'CD':400, 'XC':90, 'XL':40, 'IX':9, 'IV':4}
@@ -15,8 +24,14 @@ class Solution(object):
 
     return integer
 
-sol = Solution()
 s = 'MLXIV'
 print(s)
-print(sol.romanToInt(s))
-
+print(Solution().romanToInt(s))
+print()
+s = 'I'
+print(s)
+print(Solution().romanToInt(s))
+print()
+s = 'XLIX'
+print(s)
+print(Solution().romanToInt(s))
