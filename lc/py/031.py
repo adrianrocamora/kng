@@ -48,5 +48,10 @@ print(nums)
 Solution().next_permutation(nums)
 print(nums)
 
+nums = [0,1,0]
+print(nums)
+Solution().next_permutation(nums)
+print(nums)
+
 
 
