@@ -14,14 +14,14 @@ def invert_tree(root):
   if not root:
     return None
 
-  root.left, root.right = invert_tree(root.right), invert_tree(root.left)
+  #root.left, root.right = invert_tree(root.right), invert_tree(root.left)
 
   # OR:
-  # invert(root.left)
-  # invert(root.right)
-  # temp = root.left
-  # root.left = root.right
-  # root.right = temp
+  invert_tree(root.left)
+  invert_tree(root.right)
+  temp = root.left
+  root.left = root.right
+  root.right = temp
 
   return root
 
