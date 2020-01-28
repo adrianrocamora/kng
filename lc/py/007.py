@@ -29,3 +29,8 @@ class Solution(object):
 x = 1234
 print(x)
 print(Solution().reverse(x))
+print()
+
+x = -271
+print(x)
+print(Solution().reverse(x))

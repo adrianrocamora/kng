@@ -12,6 +12,7 @@ class Node:
   def __init__(self, val):
     self.val = val
     self.nxt = None
+
   def __str__(self):
     sl = [self.val]
     nxt = self.nxt

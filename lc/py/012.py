@@ -29,6 +29,7 @@ class Solution:
         num -= i
         roman.append(numeral)
 
+    print(roman)
     return "".join(roman)
 
 x = 14
