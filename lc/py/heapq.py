@@ -1,0 +1,20 @@
+import heapq as h
+
+a = [4, 3, 7, 1, 9, 11, 2]
+print(a)
+h.heapify(a)
+print(a)
+h.heappush(a, 0)
+print(a)
+print(h.heappop(a))
+print(a)
+print(h.heappop(a))
+print(a)
+print(h.heappop(a))
+print(a)
+print(h.heappop(a))
+print(a)
+print(h.heappop(a))
+print(a)
+print(h.heappop(a))
+print(a)
