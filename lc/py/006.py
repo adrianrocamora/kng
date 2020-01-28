@@ -29,6 +29,9 @@ class Solution(object):
       row += direction
 
     # flatten the list of lists
+    print(zigzag)
+    print([c for r in zigzag for c in r])
+    print(str([c for r in zigzag for c in r]))
     return "".join([c for r in zigzag for c in r])
 
 print(Solution().convert("hello", 3))
