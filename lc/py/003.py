@@ -1,3 +1,5 @@
+# 003 - Length of longest substring
+
 # Given a string. Find the length of the longest substring without repeating characters.
 
 # Maintain a sliding window, updating the start whenever we see a character repeated

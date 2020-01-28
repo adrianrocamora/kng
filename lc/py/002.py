@@ -1,8 +1,10 @@
+# 002 - Add two numbers
+
 # You are given two linked lists representing two non-negative numbers.
 # The digits are stored in reverse order and each of their nodes contain a single digit.
 # Add the two numbers and return the result as a linked list
 
-# Iterate over lists. Add to result a node with the sum of input nodes plus carrymod 10.
+# Iterate over lists. Add to result a node with (the sum of input nodes and carry) mod 10
 # Time - O(max(m, n)) where m and n are input list lengths
 # Space - O(max(m, n)), out put  will be at most one digit more than the longest input 
 
