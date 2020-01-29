@@ -12,18 +12,22 @@ class Node:
 
 def invert_tree(root):
   if not root:
-    return None
+    return 
+    #return None
 
   #root.left, root.right = invert_tree(root.right), invert_tree(root.left)
 
   # OR:
   invert_tree(root.left)
   invert_tree(root.right)
+
   temp = root.left
   root.left = root.right
   root.right = temp
 
-  return root
+  #return root
+  return
+
 
 # inorder traversal
 def print_tree(root):
