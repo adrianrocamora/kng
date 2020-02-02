@@ -1,1 +1,57 @@
-$$\lambda^2$$
+\documentclass[12pt]{article}
+\oddsidemargin=0pt
+\topmargin=0pt
+\textwidth=6.5in
+\textheight=8.5in
+
+\usepackage{mathtools}
+
+\begin{document}
+\begin{center}
+{\large\bfseries\LaTeX\ Example 8}
+\end{center}
+Sometimes we have to typeset a sequence of calculations:
+\begin{align}
+\sum_{r=1}^k\left( l(r)-l(r-1)\right) 
+&= \sum_{r=1}^k\left(N-2r+1\right) \\ 
+&= k(N+1)-2\sum_{r=1}^kr \\ 
+&= k(N+1)-k(k+1) \\ 
+&= k(N-k) 
+\end{align}
+\begin{quote}
+\begin{verbatim}
+\begin{align}
+\sum_{r=1}^k\left( l(r)-l(r-1)\right) 
+&= \sum_{r=1}^k\left(N-2r+1\right) \\ 
+&= k(N+1)-2\sum_{r=1}^kr \\ 
+&= k(N+1)-k(k+1) \\ 
+&= k(N-k) 
+\end{align}
+\end{verbatim}
+\end{quote}
+Here is another way:
+\begin{eqnarray*} 
+\sum_{r=1}^k\left(l(r)-l(r-1)\right) 
+&=& \sum_{r=1}^k\left(N-2r+1\right) \\ 
+&=& k(N+1)-2\sum_{r=1}^kr \\ 
+&=& k(N+1)-k(k+1) \\ &=& k(N-k) 
+\end{eqnarray*}
+\begin{quote}
+\begin{verbatim}
+\begin{eqnarray*} 
+\sum_{r=1}^k\left(l(r)-l(r-1)\right) 
+&=& \sum_{r=1}^k\left(N-2r+1\right) \\ 
+&=& k(N+1)-2\sum_{r=1}^kr \\ 
+&=& k(N+1)-k(k+1) \\ &=& k(N-k) 
+\end{eqnarray*}
+\end{verbatim}
+\end{quote}
+Observations:
+\begin{itemize}
+\item The eqnarray environment is a displayed array with three columns.  It is aligned on
+the center column.
+\item The \verb+*+ supresses the generation of equation numbers.
+\end {itemize}
+---Britney Wiggins
+
+\end{document}
