@@ -45,17 +45,40 @@ def largest_palindromic_num(n):
     for b in range(0, 10):
       for c in range(0, 10):
         candidate = 100001*a + 10010*b + 1100*c
-        for m in range(110, 990):
+        for m in range(110, 999, 11):
           if candidate % m == 0 and \
-              100 < candidate // m < 999 and \
+              100 <= candidate // m <= 999 and \
               candidate > max_prod:
             max_prod = candidate
   return max_prod
   
+def largest_palindromic_num_4():
+
+  def is_palindrome(num):
+    num_str = str(num)
+    return num_str == num_str[::-1]
+
+  # We iterate over all possible palindromes
+  # and we check if they are a product of 3 digit
+  # numbers one of which is a multiple of 11
+
+  max_prod = 0
+  max_prods= None
+  for a in range(0, 10):
+    for b in range(0, 10):
+      for c in range(0, 10):
+        for d in range(0, 10):
+          candidate = 10000001*a + 1000010*b + 100100*c + 11000*d
+          for m in range(1001, 9999, 11):
+            if candidate % m == 0 and \
+                1000 <= candidate // m <= 9999 and \
+                candidate > max_prod:
+              max_prod = candidate
+              max_prods = (m, candidate // m)
+  print(max_prods)
+  return max_prod
 #print(largest_palindromic_num(2))
 #print()
 #print(largest_palindromic_num_O_n_2(3))
-
-print(largest_palindromic_num(3))
-#print()
-#print(largest_palindromic_num(4))
+print(largest_palindromic_num_O_n_2(4))
+print(largest_palindromic_num_4())
