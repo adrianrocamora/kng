@@ -8,10 +8,11 @@
 
 class Solution(object):
   def reverse_simple(self, x):
-    xs = str(x)
-    xs = xs[::-1]
-    x = int(xs)
-    return x
+    negative = x < 0
+
+    xs = str(abs(x))
+    sign = -1 if negative else 1
+    return int(xs[::-1]) * sign
     
   def reverse(self, x):
     negative = x < 0
@@ -28,9 +29,14 @@ class Solution(object):
 
 x = 1234
 print(x)
-print(Solution().reverse(x))
+print(Solution().reverse_simple(x))
 print()
 
 x = -271
 print(x)
-print(Solution().reverse(x))
+print(Solution().reverse_simple(x))
+
+# for x in range(9000000):
+#   Solution().reverse_simple(x)
+#   #Solution().reverse(x)
+

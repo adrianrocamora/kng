@@ -15,10 +15,10 @@ class Node(object):
 
   def __str__(self):
     res = [self.val]
-    nxt = self.next
-    while nxt:
-      res.append(nxt.val)
-      nxt = nxt.next
+    curr = self.next
+    while curr:
+      res.append(curr.val)
+      curr = curr.next
     return str(res)
 
 class Solution(object):
