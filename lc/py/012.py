@@ -3,8 +3,10 @@
 # Given an integer, convert it to a roman numeral
 # Input is guaranteed to be within the range from 1 to 3999
 
-# Repeatedly take off as many copies of each numeral as possible until num is less than the value of that numeral. 
-# Time - O(n) where n = len(str(num)), the longest roman case is 8 where one digit maps to 4 chars
+# Repeatedly take off as many copies of each numeral as possible
+# until num is less than the value of that numeral. 
+# Time - O(n) where n = len(str(num)), the longest roman case is 
+# 8 where one digit maps to 4 chars
 # Space - O(n)
 
 class Solution:
