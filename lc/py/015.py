@@ -73,4 +73,3 @@ print()
 nums = [-10, -3, -2, 5, 8, 12,]
 print(nums)
 print(Solution().three_sum(nums))
-
