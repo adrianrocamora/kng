@@ -24,6 +24,10 @@ class Solution:
     if right > left:
       self.generate(prefix + [')'], left, right - 1, result)
 
+n = 0
+print(n)
+print(Solution().generate_parens(n))
+print()
 n = 1
 print(n)
 print(Solution().generate_parens(n))

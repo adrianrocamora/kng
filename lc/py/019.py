@@ -37,11 +37,15 @@ class Solution:
       second = second.nxt
     # nth from end is second.nxt
     second.nxt = second.nxt.nxt
-    return head
 
+    return head
 
 a = Node(1)
 a.nxt = Node(2)
 a.nxt.nxt = Node(3)
+a.nxt.nxt.nxt = Node(4)
+a.nxt.nxt.nxt.nxt = Node(5)
+a.nxt.nxt.nxt.nxt.nxt = Node(6)
+a.nxt.nxt.nxt.nxt.nxt.nxt = Node(7)
 print(a)
 print(Solution().remove_nth_from_end(a,1))
