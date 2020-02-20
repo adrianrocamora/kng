@@ -17,6 +17,7 @@ class Solution:
   # generates all parens given a starting prefix and 
   # remaining left and right brackets
   def generate(self, prefix, left, right, result):
+    print(prefix)
     if left == 0 and right == 0:
       result.append("".join(prefix))
     if left > 0:
